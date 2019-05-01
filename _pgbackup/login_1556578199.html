@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Grayscale - Start Bootstrap Theme</title>
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom fonts for this template -->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/login.css" rel="stylesheet">
+    </head>
+    <body id="page-top">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header -->
+        <header class="masthead">
+            <form class="vldform vldauth bg-white" id="login" action="login.php" method="POST">
+                <h2>Log in</h2>
+                <input class="vldform__textbox" type="text" name="username" placeholder="Username" required>
+                <input class="vldform__textbox" type="password" name="pass" id="" placeholder="Password" required>
+                <a class="vldform__recoverypassword" href="#" onclick="showrecoveryform()">Forgot password?</a>
+                <input id="loginbutton" class="vldform__button border border-dark" type="submit" value="Log in">
+                <p class="vldform__signup">Don't have account? <a class="vldform__signuplink" href="#" onclick="showregform()">Sign up</a> </p>
+            </form>
+            <form class="vldform vldreg bg-white" id="signup" action="register.php" method="POST">
+                <h1>Sign up</h1>
+                <input class="vldform__textbox" type="text" name="username" placeholder="Username" required>
+                <input class="vldform__textbox" type="email" name="email" id="" placeholder="Email" required>
+                <input class="vldform__textbox" type="password" name="pass" id="" placeholder="Password" required>
+                <input class="vldform__textbox" type="password" name="pass2" id="" placeholder="Password again" required>
+                <input class="vldform__button" type="submit" value="Sign up">
+                <p class="vldform__signup">You already have account? <a href="#" onclick="showauthform()">Log in</a> </p>
+            </form>
+            <form class="vldform vldrecpass" action="recovery.php" method="POST">
+                <h1>Password recovery</h1>
+                <input class="vldform__textbox" type="email" name="email" id="" placeholder="Email" required>
+                <input class="vldform__button" type="submit" value="Recovery">
+            </form>
+        </header>
+        <!-- About Section -->
+        <!-- Projects Section -->
+        <!-- Signup Section -->
+        <!-- Contact Section -->
+        <!-- Footer -->
+        <!-- Bootstrap core JavaScript -->
+        <footer id="footer" class="bg-black small text-center text-white-50">
+            <div class="container">
+                Copyright &copy; Your Website 2019
+</div>
+        </footer>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Custom scripts for this template -->
+        <script src="js/grayscale.js"></script>
+    </body>
+</html>
